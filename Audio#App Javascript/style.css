@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg, pink, rgb(0, 213, 255), pink);
+}
+
+nav {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 40px;
+
+}
+
+.brand {
+    font-size: 25px;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 15px;
+    margin: 0px 12px;
+}
+
+.controlpnal {
+    height: 80px;
+    background-color: black;
+    position: relative;
+
+}
+
+.progres input {
+    width: 80%;
+    margin-left: 115px;
+    cursor: pointer;
+
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.backicon {
+    background: white;
+    width: 30vw;
+    margin-left: 500px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+
+}
+
+.icons i {
+    margin: 1px 20px;
+    cursor: pointer;
+
+
+}
+
+.continer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+#demo {
+    position: absolute;
+    color: white;
+    /*background-color: aqua;*/
+    margin-left: 1000px;
+    margin-top: 30px;
+}
+nav ul a li{
+    text-decoration: none;
+    color: white;
+}
+.albumContiner {
+    background-color: black;
+    background-image: url(./background.webp);
+    background-size: cover;
+    color: white;
+    width: 80%;
+    height: 70vh;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.songitem {
+    background-color: white;
+    color: black;
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 7px;
+    padding: 4px;
+    margin: 10px;
+
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+span img {
+    cursor: pointer;
+}
+
+.gif img {
+    position: absolute;
+    top: 15px;
+    left: 119px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+
+}
+
+.gif p {
+    position: absolute;
+    color: white;
+
+    top: 35px;
+    left: 200px;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background: linear-gradient(45deg, rgb(212, 17, 49), rgb(0, 64, 255), rgb(218, 21, 53));
+    }
+    .brand img {
+        width: 40px;
+    
+    }
+    
+    .brand {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    nav ul li {
+        margin-left: 4rem;
+        
+        list-style: none;
+        font-size: 15px;
+        
+    }
+    .continer {
+        margin-left: -2px;
+    }
+    
+    .albumContiner {
+        width: 80vw;
+        height: 75vh;
+      
+        padding: 20px;
+    
+    }
+    .controlpnal {
+        height: 80px;
+        width: 100vw;
+      
+    
+    }
+    .progres input {
+        width: 80vw;
+        margin-left: 50px;
+    
+    }
+    .backicon {
+        background: white;
+        width:50vw;
+        margin-left:92px;
+        
+    
+    }
+    .gif img {
+        
+        top: 15px;
+        left: 9px;
+      
+    }
+    .gif p{
+        display: none;
+    }
+    .songitem {
+        
+        width: 30vw;
+        display: inline-table;
+        
+    
+    }
+}
